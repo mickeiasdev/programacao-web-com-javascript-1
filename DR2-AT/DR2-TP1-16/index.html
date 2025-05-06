@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JAVA SCRIPT I</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <style>
+      body {
+        background-color: rgb(39, 39, 39);
+        height: calc(100vh - 16px);
+        width: calc(100vw - 16px);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+      }
+      form {
+        color: white;
+        font-family: Arial, sans-serif;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        width: 200px;
+      }
+      label {
+        font-weight: bold;
+      }
+      input {
+        font-size: 15px;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+      }
+      .btn {
+        font-weight: bold;
+        text-transform: uppercase;
+        border: none;
+        color: black;
+        background-color: rgb(170, 92, 243);
+        transition: 0.3s ease-in-out;
+        border-radius: 5px;
+      }
+      .btn:hover {
+        background-color: rgb(54, 0, 104);
+        color: white;
+        border-radius: 10px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <!--Crie um formulário HTML com dois campos de data (input type="date").
+  Quando o usuário selecionar as duas datas e clicar em um botão "Calcular",
+  crie uma função JavaScript que calcule a diferença em dias entre as duas datas
+  usando o objeto Date.
+  Exiba o resultado (número de dias de diferença) na página HTML.
+  Adicione uma validação que verifique se as datas inseridas são válidas e se a
+  data final é maior que a data inicial. Se não forem, exiba uma mensagem de erro no HTML.-->
+  <body>
+    <form action="#" method="get">
+      <div id="alert" style="color: red; text-align: center"></div>
+      <label for="data1">Primeira Data:</label><br />
+      <input type="date" name="data1" id="data1" /><br />
+      <label for="data2">Primeira Data:</label><br />
+      <input type="date" name="data2" id="data2" /><br />
+      <input
+        class="btn"
+        type="button"
+        value="Calcular"
+        onclick="calcularData()"
+      />
+    </form>
+  </body>
+</html>
